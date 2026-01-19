@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Douce | Soft Cookie Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus+Jakarta+Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, .brand-font {
+            font-family: 'Playfair+Display', serif;
+        }
+        .bg-cream-gradient {
+            background: linear-gradient(135deg, #fffcf5 0%, #f7ead2 100%);
+        }
+        .cookie-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        .glass-nav {
+            background: rgba(255, 252, 245, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .image-container {
+            overflow: hidden;
+            border-radius: 1.5rem;
+            aspect-ratio: 1/1;
+        }
+        .image-container img {
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .cookie-card:hover .image-container img {
+            transform: scale(1.15);
+        }
+    </style>
+</head>
+<body class="bg-cream-gradient text-stone-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-orange-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-orange-800 brand-font">La Douce</div>
+            <div class="hidden md:flex space-x-8 font-medium text-stone-600 text-sm tracking-wide uppercase">
+                <a href="#home" class="hover:text-orange-600 transition">Beranda</a>
+                <a href="#menu" class="hover:text-orange-600 transition">Menu</a>
+                <a href="#contact" class="bg-orange-800 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition shadow-md shadow-orange-200">Pesan Sekarang</a>
+            </div>
+            <!-- Mobile Menu Icon -->
+            <div class="md:hidden text-orange-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 space-y-8 text-center md:text-left">
+                <span class="inline-block bg-orange-100 text-orange-800 px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase">Premium Artisan Cookies</span>
+                <h1 class="text-5xl md:text-7xl text-stone-900 leading-tight tracking-tight">Ciptakan Momen Manis dengan <span class="text-orange-800">Soft Cookies</span> Terbaik.</h1>
+                <p class="text-lg text-stone-600 max-w-lg leading-relaxed">Rahasia kebahagiaan ada di sini. Tekstur lembut yang lumer seketika, dibuat fresh setiap pagi hanya untuk Anda.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#menu" class="px-10 py-4 bg-orange-800 text-white rounded-full text-lg font-semibold hover:bg-orange-900 shadow-xl shadow-orange-200 transition text-center">Eksplor Menu Kami</a>
+                    <a href="#contact" class="px-10 py-4 border-2 border-orange-800 text-orange-800 rounded-full text-lg font-semibold hover:bg-orange-50 transition text-center">Hubungi Kami</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0 relative flex justify-center">
+                <div class="w-72 h-72 md:w-[500px] md:h-[500px] bg-orange-300 rounded-full absolute top-0 blur-[100px] opacity-20"></div>
+                <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?q=80&w=1000&auto=format&fit=crop" alt="[Hero Image Soft Cookie]" class="relative rounded-[3rem] shadow-2xl z-10 w-full max-w-md transform rotate-3 hover:rotate-0 transition duration-700">
+            </div>
+        </div>
+    </section>
+
+    <!-- Fitur & Keunggulan (Gak Jadi Hilang) -->
+    <section class="py-20 bg-white/60 backdrop-blur-md border-y border-orange-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div class="space-y-4 p-6 rounded-3xl hover:bg-white transition-colors">
+                    <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                        <svg class="w-8 h-8 text-orange-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900">100% Mentega Premium</h3>
+                    <p class="text-stone-500 leading-relaxed text-sm">Kami hanya menggunakan French Butter berkualitas tinggi untuk aroma yang memikat dan rasa yang kaya.</p>
+                </div>
+                <div class="space-y-4 p-6 rounded-3xl hover:bg-white transition-colors">
+                    <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                        <svg class="w-8 h-8 text-orange-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900">Dipanggang Segar</h3>
+                    <p class="text-stone-500 leading-relaxed text-sm">Tidak ada stok lama. Semua pesanan dibuat di hari yang sama agar tekstur lumer tetap maksimal di tangan Anda.</p>
+                </div>
+                <div class="space-y-4 p-6 rounded-3xl hover:bg-white transition-colors">
+                    <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-2">
+                        <svg class="w-8 h-8 text-orange-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900">Hampers Eksklusif</h3>
+                    <p class="text-stone-500 leading-relaxed text-sm">Dikemas dengan boks elegan dan kartu ucapan kustom. Pilihan tepat untuk hadiah orang tersayang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-6xl mb-4 text-stone-900 leading-tight">Varian <span class="italic text-orange-800">La Douce</span></h2>
+                <div class="w-24 h-1.5 bg-orange-800 mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Matcha Boomb -->
+                <div class="bg-white p-6 rounded-[2.5rem] cookie-card shadow-2xl shadow-stone-200/40 border border-stone-100 flex flex-col">
+                    <div class="image-container mb-8">
+                        <img src="https://files.wondercook.co/1790566ea970dc4ae4372cda1c169b21.JPG" alt="[Cookie Matcha Boomb]">
+                    </div>
+                    <div class="px-2 flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-stone-900">Matcha Boomb</h3>
+                            <span class="bg-green-100 text-green-700 px-4 py-1.5 rounded-full text-sm font-black">Rp 25k</span>
+                        </div>
+                        <p class="text-stone-500 mb-8 leading-relaxed">Perpaduan Grade A Matcha dengan isian cokelat putih cair yang meledak di lidah.</p>
+                    </div>
+                    <a href="#contact" class="block text-center w-full py-4 bg-stone-900 text-white rounded-2xl hover:bg-orange-800 transition font-bold tracking-wide">Pilih Menu Ini</a>
+                </div>
+
+                <!-- Double Choco -->
+                <div class="bg-white p-6 rounded-[2.5rem] cookie-card shadow-2xl shadow-stone-200/40 border border-stone-100 flex flex-col">
+                    <div class="image-container mb-8">
+                        <img src="https://i.pinimg.com/736x/a3/b1/3f/a3b13fd2551871f8b9672c74dc88d2b3.jpg" alt="[Cookie Double Chocolate]">
+                    </div>
+                    <div class="px-2 flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-stone-900">Double Choco</h3>
+                            <span class="bg-stone-100 text-stone-800 px-4 py-1.5 rounded-full text-sm font-black">Rp 20k</span>
+                        </div>
+                        <p class="text-stone-500 mb-8 leading-relaxed">Adonan cokelat hitam pekat dengan lelehan cokelat susu di setiap lapisannya.</p>
+                    </div>
+                    <a href="#contact" class="block text-center w-full py-4 bg-stone-900 text-white rounded-2xl hover:bg-orange-800 transition font-bold tracking-wide">Pilih Menu Ini</a>
+                </div>
+
+                <!-- Birthday Cake -->
+                <div class="bg-white p-6 rounded-[2.5rem] cookie-card shadow-2xl shadow-stone-200/40 border border-stone-100 flex flex-col">
+                    <div class="image-container mb-8">
+                        <img src="https://i.pinimg.com/1200x/63/3a/fe/633afeeb7aa09de650f72daefe125b8b.jpg" alt="[Cookie Birthday Cake]">
+                    </div>
+                    <div class="px-2 flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-stone-900">Birthday Cake</h3>
+                            <span class="bg-pink-100 text-pink-700 px-4 py-1.5 rounded-full text-sm font-black">Rp 23k</span>
+                        </div>
+                        <p class="text-stone-500 mb-8 leading-relaxed">Ceria dengan taburan sprinkles warna-warni dan rasa vanila mentega yang legit.</p>
+                    </div>
+                    <a href="#contact" class="block text-center w-full py-4 bg-stone-900 text-white rounded-2xl hover:bg-orange-800 transition font-bold tracking-wide">Pilih Menu Ini</a>
+                </div>
+
+                <!-- Red Velvet -->
+                <div class="bg-white p-6 rounded-[2.5rem] cookie-card shadow-2xl shadow-stone-200/40 border border-stone-100 flex flex-col">
+                    <div class="image-container mb-8">
+                        <img src="https://www.modernhoney.com/wp-content/uploads/2024/12/Cheesecake-Stuffed-Red-Velvet-Cookies-1-scaled.jpg" alt="[Cookie Red Velvet Cheese]">
+                    </div>
+                    <div class="px-2 flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-stone-900">Red Velvet</h3>
+                            <span class="bg-red-100 text-red-700 px-4 py-1.5 rounded-full text-sm font-black">Rp 22k</span>
+                        </div>
+                        <p class="text-stone-500 mb-8 leading-relaxed">Mewah dengan warna merah khas dan isian cream cheese yang gurih berlimpah.</p>
+                    </div>
+                    <a href="#contact" class="block text-center w-full py-4 bg-stone-900 text-white rounded-2xl hover:bg-orange-800 transition font-bold tracking-wide">Pilih Menu Ini</a>
+                </div>
+
+                <!-- Classic Choco -->
+                <div class="bg-white p-6 rounded-[2.5rem] cookie-card shadow-2xl shadow-stone-200/40 border border-stone-100 flex flex-col">
+                    <div class="image-container mb-8">
+                        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=800&auto=format&fit=crop" alt="[Cookie Classic Chocolate]">
+                    </div>
+                    <div class="px-2 flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-stone-900">Classic Choco</h3>
+                            <span class="bg-orange-100 text-orange-800 px-4 py-1.5 rounded-full text-sm font-black">Rp 18k</span>
+                        </div>
+                        <p class="text-stone-500 mb-8 leading-relaxed">Varian orisinal dengan potongan choco chip Belgia yang tak pernah mengecewakan.</p>
+                    </div>
+                    <a href="#contact" class="block text-center w-full py-4 bg-stone-900 text-white rounded-2xl hover:bg-orange-800 transition font-bold tracking-wide">Pilih Menu Ini</a>
+                </div>
+
+                <!-- Lotus Biscoff -->
+                <div class="bg-white p-6 rounded-[2.5rem] cookie-card shadow-2xl shadow-stone-200/40 border border-stone-100 flex flex-col">
+                    <div class="image-container mb-8">
+                        <img src="https://images.unsplash.com/photo-1559622214-f8a9850965bb?q=80&w=800&auto=format&fit=crop" alt="[Cookie Lotus Biscoff]">
+                    </div>
+                    <div class="px-2 flex-grow">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-stone-900">Lotus Biscoff</h3>
+                            <span class="bg-yellow-100 text-yellow-800 px-4 py-1.5 rounded-full text-sm font-black">Rp 25k</span>
+                        </div>
+                        <p class="text-stone-500 mb-8 leading-relaxed">Karamel Lotus Biscoff yang crunchy dan lumeran selai biscoff di dalamnya.</p>
+                    </div>
+                    <a href="#contact" class="block text-center w-full py-4 bg-stone-900 text-white rounded-2xl hover:bg-orange-800 transition font-bold tracking-wide">Pilih Menu Ini</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-24 bg-stone-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-4xl md:text-5xl leading-tight brand-font italic text-orange-400">Suara Pelanggan Setia Kami</h2>
+                    <p class="text-stone-400 text-lg">Lebih dari 500+ cookies terjual setiap harinya dengan testimoni kepuasan yang luar biasa.</p>
+                    <div class="flex items-center gap-6">
+                        <div class="text-3xl font-bold">4.9/5</div>
+                        <div class="text-orange-400 text-2xl tracking-widest uppercase">★★★★★</div>
+                    </div>
+                </div>
+                <div class="bg-stone-800 p-10 rounded-[2.5rem] border border-stone-700 relative shadow-2xl">
+                    <div class="absolute -top-6 -left-6 text-7xl text-orange-800/50 font-serif">“</div>
+                    <p class="italic text-xl mb-8 leading-relaxed">"Gak nyangka rasanya bakal selumer ini. Yang Matcha Boomb bener-bener gila matchanya berasa banget dan nggak pahit. Packagingnya juga cakep buat kado."</p>
+                    <div class="flex items-center gap-4 border-t border-stone-700 pt-6">
+                        <div class="w-14 h-14 bg-orange-400 rounded-full flex items-center justify-center font-bold text-stone-900">SR</div>
+                        <div>
+                            <p class="font-bold tracking-wide text-lg">Siska Rahayu</p>
+                            <p class="text-sm text-stone-500 uppercase tracking-tighter">Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Order Section -->
+    <section id="contact" class="py-24 px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl mb-8 text-stone-900 leading-tight">Rasakan Keajaibannya Sekarang.</h2>
+            <div class="bg-white p-12 rounded-[3.5rem] shadow-2xl border border-orange-100/50 backdrop-blur-sm">
+                <p class="text-stone-600 text-xl mb-12 max-w-2xl mx-auto leading-relaxed">Klik tombol di bawah untuk memesan via WhatsApp. Tim kami siap membantu pengiriman hari ini.</p>
+                <div class="flex flex-col md:flex-row justify-center gap-6">
+                    <a href="https://wa.me/6282228574193" target="_blank" class="flex items-center justify-center gap-4 bg-green-500 text-white px-12 py-5 rounded-[2rem] text-xl font-black hover:bg-green-600 transition transform hover:scale-105 shadow-xl shadow-green-500/30">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+                        Pesan di WhatsApp
+                    </a>
+                </div>
+                <p class="text-stone-400 mt-8 text-sm uppercase tracking-widest font-bold">Delivery available: GoFood • GrabFood • ShopeeFood</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-white border-t border-orange-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="text-3xl font-black text-orange-800 brand-font mb-4">La Douce</div>
+            <p class="text-stone-500 max-w-xs mx-auto mb-8 text-sm leading-relaxed tracking-wide">find our store in: jl.Monginsidi, No.24 Selosari, Jawa Timur.</p>
+            <div class="flex justify-center space-x-8 mb-12">
+                <a href="#" class="text-stone-400 hover:text-orange-800 transition">Instagram</a>
+                <a href="#" class="text-stone-400 hover:text-orange-800 transition">TikTok</a>
+                <a href="#" class="text-stone-400 hover:text-orange-800 transition">Facebook</a>
+            </div>
+            <p class="text-stone-300 text-xs tracking-widest uppercase">&copy; 2026 La Douce Soft Cookie. Kedai Cookies Kebanggaan Anda.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
